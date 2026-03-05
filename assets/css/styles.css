@@ -60,11 +60,19 @@ nav a:hover {
 footer {
     background-color: var(--charcoal);
     color: var(--background);
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
+    /* Reduced from 2rem for desktop */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 2rem;
+        /* Maintain previous size for mobile */
+    }
 }
 
 footer a {
