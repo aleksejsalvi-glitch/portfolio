@@ -9,7 +9,7 @@
                 <div class="project-image-box">
                     <a href="{{ .Permalink }}">
                         {{ if .Params.image }}
-                        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
                         {{ else }}
                         <div class="placeholder-box"><span>No Image</span></div>
                         {{ end }}

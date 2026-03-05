@@ -2,10 +2,10 @@
 <div class="home-grid">
     <!-- Row 1: 4 small vertical images -->
     <div class="grid-row row-4col row-narrow-gap">
-        <div class="grid-item"><img src="/images/home_page/16.jpeg" alt="Ceramics"></div>
-        <div class="grid-item"><img src="/images/home_page/18a.jpeg" alt="Painting"></div>
-        <div class="grid-item"><img src="/images/home_page/20.jpeg" alt="Ceramics Detail"></div>
-        <div class="grid-item"><img src="/images/home_page/21.jpg" alt="Painting Detail"></div>
+        <div class="grid-item"><img src="{{ " images/home_page/16.jpeg" | relURL }}" alt="Ceramics"></div>
+        <div class="grid-item"><img src="{{ " images/home_page/18a.jpeg" | relURL }}" alt="Painting"></div>
+        <div class="grid-item"><img src="{{ " images/home_page/20.jpeg" | relURL }}" alt="Ceramics Detail"></div>
+        <div class="grid-item"><img src="{{ " images/home_page/21.jpg" | relURL }}" alt="Painting Detail"></div>
     </div>
 
     <!-- Row 2: Centered quote/intro -->
@@ -19,12 +19,13 @@
 
     <!-- Row 3: Full-width wide image -->
     <div class="grid-row row-full">
-        <div class="grid-item horizontal-image"><img src="/images/home_page/22.jpg" alt="Feature Painting"></div>
+        <div class="grid-item horizontal-image"><img src="{{ " images/home_page/22.jpg" | relURL }}"
+                alt="Feature Painting"></div>
     </div>
 
     <!-- Row 4: Image - Centered Text - Image -->
     <div class="grid-row row-bio-layout section-spacing">
-        <div class="grid-item vertical-image"><img src="/images/home_page/19a.jpeg" alt="Work 1"></div>
+        <div class="grid-item vertical-image"><img src="{{ " images/home_page/19a.jpeg" | relURL }}" alt="Work 1"></div>
         <div class="text-item">
             <h2>BIO</h2>
             <p>My practice moves between material research and investigative making. Through experimental processes,
@@ -32,24 +33,25 @@
                 testing, where meaning emerges through material change.
             </p>
         </div>
-        <div class="grid-item vertical-image"><img src="/images/home_page/12.jpeg" alt="Work 2"></div>
+        <div class="grid-item vertical-image"><img src="{{ " images/home_page/12.jpeg" | relURL }}" alt="Work 2"></div>
     </div>
 
     <!-- Row 5: Full-width wide image -->
     <div class="grid-row row-full section-spacing">
-        <div class="grid-item horizontal-image"><img src="/images/home_page/24.jpg" alt="Wide Showcase"></div>
+        <div class="grid-item horizontal-image"><img src="{{ " images/home_page/24.jpg" | relURL }}"
+                alt="Wide Showcase"></div>
     </div>
 
     <!-- Row 6: Centered Text - Image - Image -->
     <div class="grid-row row-3col section-spacing">
         <div class="text-item">
-            <a href="/projects/" class="project-section-link">
+            <a href="{{ " /projects/" | relURL }}" class="project-section-link">
                 <h2>PROJECTS &rarr;</h2>
             </a>
             <p>Discover the latest works and research</p>
         </div>
-        <div class="grid-item"><img src="/images/home_page/14.jpg" alt="Painting 1"></div>
-        <div class="grid-item"><img src="/images/home_page/15.jpg" alt="Painting 2"></div>
+        <div class="grid-item"><img src="{{ " images/home_page/14.jpg" | relURL }}" alt="Painting 1"></div>
+        <div class="grid-item"><img src="{{ " images/home_page/15.jpg" | relURL }}" alt="Painting 2"></div>
     </div>
 </div>
 {{ end }}
