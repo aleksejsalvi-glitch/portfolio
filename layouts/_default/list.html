@@ -10,7 +10,7 @@
         {{ range .Pages }}
         <div class="article-card">
             {{ if .Params.image }}
-            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}"
+            <img src='{{ .Params.image | strings.TrimPrefix "/" | relURL }}' alt="{{ .Title }}"
                 style="width: 100%; height: auto; margin-bottom: 1rem;">
             {{ else }}
             <div

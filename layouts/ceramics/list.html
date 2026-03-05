@@ -34,14 +34,14 @@
                         <div class="sweep-container">
                             {{ range .Params.images }}
                             <div class="sweep-item">
-                                <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+                                <img src='{{ . | strings.TrimPrefix "/" | relURL }}' alt="{{ $.Title }}">
                             </div>
                             {{ end }}
                         </div>
                         <button class="nav-arrow next" aria-label="Next image">&#10217;</button>
                     </div>
                     {{ else if .Params.image }}
-                    <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+                    <img src='{{ .Params.image | strings.TrimPrefix "/" | relURL }}' alt="{{ .Title }}">
                     {{ else }}
                     <div class="placeholder-box">
                         <span>No Image</span>

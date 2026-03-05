@@ -3,7 +3,7 @@
     {{ if .Params.profile_image }}
     <div class="about-page-header">
         <div class="profile-image-box">
-            <img src="{{ .Params.profile_image | relURL }}" alt="{{ .Title }}">
+            <img src='{{ .Params.profile_image | strings.TrimPrefix "/" | relURL }}' alt="{{ .Title }}">
         </div>
         <div class="title-container">
             <h1 class="page-title">{{ .Title | upper }}</h1>
@@ -22,7 +22,8 @@
     {{ end }}
 
     {{ if .Params.image }}
-    <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" style="width: 100%; height: auto; margin-bottom: 2rem;">
+    <img src='{{ .Params.image | strings.TrimPrefix "/" | relURL }}' alt="{{ .Title }}"
+        style="width: 100%; height: auto; margin-bottom: 2rem;">
     {{ end }}
 
     <div class="content" style="font-size: 1rem; line-height: 1.8;">
