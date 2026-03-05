@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="projects-container">
+
+    <div class="projects-list">
+        {{ range $index, $page := .Pages.ByWeight }}
+        <section class="project-horizontal-section">
+            <h2 class="project-title-centered">{{ .Title | upper }}</h2>
+            <div class="project-alternating-row {{ if modBool (add $index 1) 2 }}row-reverse{{ end }}">
+                <div class="project-image-box">
+                    <a href="{{ .Permalink }}">
+                        {{ if .Params.image }}
+                        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <div class="placeholder-box"><span>No Image</span></div>
+                        {{ end }}
+                    </a>
+                </div>
+                <div class="project-text-box">
+                    <p class="project-summary">{{ .Params.description | default .Summary }}</p>
+                    <a href="{{ .Permalink }}" class="project-link-more">VIEW PROJECT →</a>
+                </div>
+            </div>
+        </section>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

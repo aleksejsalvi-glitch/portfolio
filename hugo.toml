@@ -1,0 +1,38 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'ALEX SALVI'
+
+[params]
+  description = "Personal portfolio of Alex Salvi: Art, Research, Crafts."
+  charcoal = "#333333"
+  background = "#ffffff"
+
+[[menu.main]]
+  name = "HOME"
+  url = "/"
+  weight = 5
+
+[[menu.main]]
+  name = "CERAMICS"
+  url = "/ceramics/"
+  weight = 10
+
+[[menu.main]]
+  name = "PAINTING & DRAWINGS"
+  url = "/painting-drawings/"
+  weight = 20
+
+[[menu.main]]
+  name = "CALLIGRAPHY"
+  url = "/calligraphy/"
+  weight = 30
+
+[[menu.main]]
+  name = "RESEARCH"
+  url = "/research/"
+  weight = 40
+
+[[menu.main]]
+  name = "PROJECTS"
+  url = "/projects/"
+  weight = 50

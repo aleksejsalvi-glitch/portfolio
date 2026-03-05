@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation | ALEX SALVI</title>
+    
+    <link rel="stylesheet" href="/css/styles.min.f2a5251065994f3292080184d63443d963bfb3bad7e94027f3c25fea84af3d26.css" integrity="sha256-8qUlEGWZTzKSCAGE1jRD2WO/s7rX6UAn88Jf6oSvPSY=">
+</head>
+
+<body>
+    <header>
+    <div class="logo">
+        <h1><a href="http://localhost:1313/" style="text-decoration: none; color: inherit;">ALEX SALVI</a></h1>
+    </div>
+    <nav>
+        <ul>
+            
+            <li><a href="/">HOME</a></li>
+            
+            <li><a href="/ceramics/">CERAMICS</a></li>
+            
+            <li><a href="/painting-drawings/">PAINTING &amp; DRAWINGS</a></li>
+            
+            <li><a href="/calligraphy/">CALLIGRAPHY</a></li>
+            
+            <li><a href="/research/">RESEARCH</a></li>
+            
+            <li><a href="/projects/">PROJECTS</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        
+<div class="section-container project-detail">
+    <div class="project-header">
+        <h1 class="page-title">MEDITATION</h1>
+        <p class="project-date">MARCH 12, 2025</p>
+    </div>
+
+    <div class="project-main-image">
+        
+        <img src="/images/projects/3.jpg" alt="Meditation" class="zoom-trigger">
+        
+    </div>
+
+    <div id="zoom-overlay" class="zoom-overlay">
+    <div class="zoom-close">&times;</div>
+    <div id="zoom-container" class="zoom-container">
+        <img id="zoom-img" src="" alt="Zoomed view">
+    </div>
+</div>
+
+<style>
+    .zoom-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        z-index: 10000;
+        cursor: zoom-out;
+        overflow: hidden;
+        touch-action: none;
+    }
+
+    .zoom-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.1s ease-out;
+    }
+
+    .zoom-container img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        cursor: grab;
+        user-select: none;
+        -webkit-user-drag: none;
+        transition: transform 0.2s ease-out;
+    }
+
+    .zoom-container img:active {
+        cursor: grabbing;
+    }
+
+    .zoom-close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2.5rem;
+        color: var(--charcoal);
+        cursor: pointer;
+        z-index: 10001;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+    }
+
+    .zoom-close:hover {
+        opacity: 1;
+    }
+
+     
+    .zoom-trigger {
+        cursor: zoom-in !important;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const overlay = document.getElementById('zoom-overlay');
+        const container = document.getElementById('zoom-container');
+        const zoomImg = document.getElementById('zoom-img');
+        const closeBtn = document.querySelector('.zoom-close');
+
+        let scale = 1;
+        let translateX = 0;
+        let translateY = 0;
+        let isDragging = false;
+        let startX, startY;
+
+        
+        const MIN_SCALE = 1;
+        const MAX_SCALE = 5;
+        const ZOOM_SPEED = 0.001;
+
+        
+        document.querySelectorAll('.zoom-trigger').forEach(img => {
+            img.addEventListener('click', function (e) {
+                zoomImg.src = this.src;
+                overlay.style.display = 'block';
+                resetZoom();
+            });
+        });
+
+        function resetZoom() {
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            updateTransform();
+        }
+
+        function updateTransform() {
+            zoomImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+        }
+
+        
+        function closeZoom() {
+            overlay.style.display = 'none';
+            zoomImg.src = '';
+        }
+
+        closeBtn.addEventListener('click', closeZoom);
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay || e.target === container) {
+                closeZoom();
+            }
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && overlay.style.display === 'block') {
+                closeZoom();
+            }
+        });
+
+        
+        overlay.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const delta = -e.deltaY;
+            const factor = Math.exp(delta * ZOOM_SPEED);
+
+            let newScale = scale * factor;
+            newScale = Math.min(Math.max(MIN_SCALE, newScale), MAX_SCALE);
+
+            scale = newScale;
+            updateTransform();
+        }, { passive: false });
+
+        
+        const startPan = (e) => {
+            if (scale <= 1) return;
+            isDragging = true;
+            const point = e.touches ? e.touches[0] : e;
+            startX = point.clientX - translateX;
+            startY = point.clientY - translateY;
+        };
+
+        const movePan = (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const point = e.touches ? e.touches[0] : e;
+            translateX = point.clientX - startX;
+            translateY = point.clientY - startY;
+            updateTransform();
+        };
+
+        const endPan = () => {
+            isDragging = false;
+        };
+
+        zoomImg.addEventListener('mousedown', startPan);
+        window.addEventListener('mousemove', movePan);
+        window.addEventListener('mouseup', endPan);
+
+        zoomImg.addEventListener('touchstart', startPan);
+        window.addEventListener('touchmove', movePan, { passive: false });
+        window.addEventListener('touchend', endPan);
+    });
+</script>
+
+    
+    <div class="project-content-with-side">
+        <div class="project-side-image">
+            
+            <img src="/images/projects/4a.jpg" alt="Side image for Meditation">
+            
+        </div>
+        <div class="project-main-text">
+            <div class="project-description-full">
+                <p>Meditation is a mixed-media installation composed of three primary elements: a low wooden table positioned against a white wall, a transparent glass chalice containing raw  honey, and a sand-filled cushion placed directly on the floor as a point of kneeling or seated engagement. The configuration is sparse and frontal, establishing a clear spatial hierarchy that directs attention toward the central object while simultaneously implicating the body of the viewer.</p>
+<p>The materials are selected for both sensory and symbolic resonance. The glass chalice introduces transparency and fragility; it recalls liturgical vessels and laboratory glassware, situatinng the work between ritual and observation. The honey carries chromatic warmth and olfactory presence. Its slow movement and resistance to flow suggest concentration and refinement. The sand within the cushion provides softness and instability: it shifts under weight, recording the temporary imprint of each participant before gradually erasing it.</p>
+<p>The white wall functions as a visual ground, minimizing distraction and reinforcing a condition of reduction. The installation operates through restraint. There is no prescribed actoin beyond proximity and posture. To kneel or sit is to alter one&rsquo;s physical orientation, lowering the body and narrowing the field of vision. The sand registers this enounter as a fleeting trace, an index of presence rather than a permanent mark.</p>
+<p>Conceptually the work draws upon historical associations of honey within spiritual and alchemical traditions, where it has signified nourishment, illumination, preservation, and the distillation of essence. In this context the chalice becomes both offering and focal point: an object that suggests sweetness as a metaphor of knowledge or inner clarity. Yet the installation avoids spectacle. The honey is not consumed, it remains contained, available only as image, scent, and idea.</p>
+<p>Meditation proposes that ritual does not require ornamentation. Sacredness, if present, emerges through attentio and duration. The act of kneeling, the pressure of the body into sand, the silent regard of a golden substance held in glass, these minimal gestures frame contemplation as a material event. What is transformed is not the object, but the condition of perception.</p>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="back-link">
+        <a href="/projects/">← BACK TO PROJECTS</a>
+    </div>
+</div>
+
+    </main>
+
+    <footer>
+    <div class="footer-grid">
+        <div class="footer-section">
+            <a href="/about/" style="text-decoration: none; color: inherit;">
+                <h3 class="footer-title">ABOUT</h3>
+                <p>About Alex Salvi, artist and researcher.</p>
+                <p>Work on commission.</p>
+            </a>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer-title">CONTACTS</h3>
+            <p><a href="mailto:aleksejsalvi@gmail.com">aleksejsalvi@gmail.com</a></p>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer-title">SOCIALS</h3>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">@alexsalvi.materials</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2026 ALEX SALVI</p>
+    </div>
+</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const wrappers = document.querySelectorAll('.sweep-wrapper');
+
+            wrappers.forEach(wrapper => {
+                const container = wrapper.querySelector('.sweep-container');
+                const prevBtn = wrapper.querySelector('.nav-arrow.prev');
+                const nextBtn = wrapper.querySelector('.nav-arrow.next');
+
+                if (!container || !prevBtn || !nextBtn) return;
+
+                const scrollAmount = () => container.clientWidth;
+
+                nextBtn.addEventListener('click', () => {
+                    container.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    container.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

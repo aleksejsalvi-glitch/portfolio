@@ -1,0 +1,32 @@
+{{ define "main" }}
+<article class="section-container" style="padding: 4rem 2rem; max-width: 1200px; margin: 0 auto;">
+    {{ if .Params.profile_image }}
+    <div class="about-page-header">
+        <div class="profile-image-box">
+            <img src="{{ .Params.profile_image }}" alt="{{ .Title }}">
+        </div>
+        <div class="title-container">
+            <h1 class="page-title">{{ .Title | upper }}</h1>
+            {{ if .Params.subtitle }}
+            <p class="page-subtitle">{{ .Params.subtitle | upper }}</p>
+            {{ end }}
+        </div>
+    </div>
+    {{ else }}
+    <div style="text-align: center; margin-bottom: 4rem;">
+        <h1 class="page-title">{{ .Title | upper }}</h1>
+        {{ if .Params.subtitle }}
+        <p class="page-subtitle">{{ .Params.subtitle | upper }}</p>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.image }}
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 100%; height: auto; margin-bottom: 2rem;">
+    {{ end }}
+
+    <div class="content" style="font-size: 1rem; line-height: 1.8;">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

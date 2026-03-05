@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="home-grid">
+    <div style="padding: 2rem 0;">
+        <h1
+            style="margin-bottom: 2rem; font-size: 1.25rem; letter-spacing: 0.1em; text-align: center; font-weight: 400;">
+            {{ .Title | upper }}</h1>
+        <div class="section-description">
+            {{ .Content }}
+        </div>
+
+        <div class="grid-row row-4col row-narrow-gap">
+            {{ range .Pages.ByWeight }}
+            <div class="grid-item vertical-image">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                {{ else }}
+                <div
+                    style="aspect-ratio: 4/5; background: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+                    <span style="opacity: 0.5;">No Image</span>
+                </div>
+                {{ end }}
+                <h3 class="artwork-title">{{ .Title | upper }}</h3>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

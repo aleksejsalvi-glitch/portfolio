@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ALEX SALVI | ALEX SALVI</title>
+    
+    <link rel="stylesheet" href="/css/styles.min.f2a5251065994f3292080184d63443d963bfb3bad7e94027f3c25fea84af3d26.css" integrity="sha256-8qUlEGWZTzKSCAGE1jRD2WO/s7rX6UAn88Jf6oSvPSY=">
+</head>
+
+<body>
+    <header>
+    <div class="logo">
+        <h1><a href="http://localhost:1313/" style="text-decoration: none; color: inherit;">ALEX SALVI</a></h1>
+    </div>
+    <nav>
+        <ul>
+            
+            <li><a href="/">HOME</a></li>
+            
+            <li><a href="/ceramics/">CERAMICS</a></li>
+            
+            <li><a href="/painting-drawings/">PAINTING &amp; DRAWINGS</a></li>
+            
+            <li><a href="/calligraphy/">CALLIGRAPHY</a></li>
+            
+            <li><a href="/research/">RESEARCH</a></li>
+            
+            <li><a href="/projects/">PROJECTS</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        
+<article class="section-container" style="padding: 4rem 2rem; max-width: 1200px; margin: 0 auto;">
+    
+    <div class="about-page-header">
+        <div class="profile-image-box">
+            <img src="/images/me.jpeg" alt="ABOUT ALEX SALVI">
+        </div>
+        <div class="title-container">
+            <h1 class="page-title">ABOUT ALEX SALVI</h1>
+            
+            <p class="page-subtitle">ARTIST AND RESEARCHER</p>
+            
+        </div>
+    </div>
+    
+
+    
+
+    <div class="content" style="font-size: 1rem; line-height: 1.8;">
+        <p>Alex Salvi is an Italian ceramic researcher and multidisciplinary artist whose practice centers on porcelain and high-temperature ceramic processes. Their work explores transformation, instability, and the interaction between controlled systems and unpredictable materials behaviors.</p>
+<p>Working primarily with ceramics, Salvi combines sculptural practice with experimental research into glaze chemistry, minerals, and raw geological materials. Through slip casting, mold making, and experimental glaze development, they investigates how materials respond to extreme firing conditions and how small variations can generate unexpected surfaces, structures, and forms.</p>
+<p>Alongside ceramic work, their practice extends to painting, calligraphy, and installation, often integrating different media to explore relationships between material, process, and space. These parallel practices inform their approach to ceramics, emphasizing gesture, surface, and structural rhythm.</p>
+<p>Salvi holds a BA in Sculpture from the Academy of Fine Arts in Florence and an MA in Visual Arts - Environmental Sculpture and Production Technologies from the Academy of FIne Arts of Urbino, graduating with highest honour. Their academic research has included studies on ultra-refractory ceramics for space applications and experimental investigations into the use of rocks and minerals in high-temperature glazes.</p>
+<p>Their work has been exhibited in Italy and includes sculptural pieces, installations, and research-driven ceramic projects.</p>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+    <div class="footer-grid">
+        <div class="footer-section">
+            <a href="/about/" style="text-decoration: none; color: inherit;">
+                <h3 class="footer-title">ABOUT</h3>
+                <p>About Alex Salvi, artist and researcher.</p>
+                <p>Work on commission.</p>
+            </a>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer-title">CONTACTS</h3>
+            <p><a href="mailto:aleksejsalvi@gmail.com">aleksejsalvi@gmail.com</a></p>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer-title">SOCIALS</h3>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">@alexsalvi.materials</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2026 ALEX SALVI</p>
+    </div>
+</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const wrappers = document.querySelectorAll('.sweep-wrapper');
+
+            wrappers.forEach(wrapper => {
+                const container = wrapper.querySelector('.sweep-container');
+                const prevBtn = wrapper.querySelector('.nav-arrow.prev');
+                const nextBtn = wrapper.querySelector('.nav-arrow.next');
+
+                if (!container || !prevBtn || !nextBtn) return;
+
+                const scrollAmount = () => container.clientWidth;
+
+                nextBtn.addEventListener('click', () => {
+                    container.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    container.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

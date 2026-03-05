@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="home-grid">
+    <div style="padding: 2rem 0;">
+        <h1
+            style="margin-bottom: 2rem; font-size: 1.25rem; letter-spacing: 0.1em; text-align: center; font-weight: 400;">
+            {{ .Title | upper }}</h1>
+        <div class="section-description">
+            {{ .Content }}
+        </div>
+
+        {{ range .Sections.ByWeight }}
+        <div class="ceramics-subcategory" style="margin-top: 6rem;">
+            <h2
+                style="font-size: 0.95rem; font-weight: 400; letter-spacing: 0.1em; text-align: center; margin-bottom: 3rem; opacity: 0.8;">
+                {{ .Title | upper }}</h2>
+
+            <div class="grid-row row-4col row-narrow-gap">
+                {{ range .Pages.ByWeight }}
+                {{ $ratioClass := "square-image" }}
+                {{ $aspectRatioStyle := "1/1" }}
+                {{ if eq .Params.ratio "4:5" }}
+                {{ $ratioClass = "vertical-image" }}
+                {{ $aspectRatioStyle = "4/5" }}
+                {{ else if eq .Params.ratio "horizontal" }}
+                {{ $ratioClass = "horizontal-image" }}
+                {{ $aspectRatioStyle = "21/6" }}
+                {{ end }}
+                <div class="grid-item {{ $ratioClass }}" {{ if .Params.blank
+                    }}style="visibility: hidden; pointer-events: none;" {{ end }}>
+                    {{ if not .Params.blank }}
+                    {{ if .Params.images }}
+                    <div class="sweep-wrapper">
+                        <button class="nav-arrow prev" aria-label="Previous image">&#10216;</button>
+                        <div class="sweep-container">
+                            {{ range .Params.images }}
+                            <div class="sweep-item">
+                                <img src="{{ . }}" alt="{{ $.Title }}">
+                            </div>
+                            {{ end }}
+                        </div>
+                        <button class="nav-arrow next" aria-label="Next image">&#10217;</button>
+                    </div>
+                    {{ else if .Params.image }}
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                    {{ else }}
+                    <div class="placeholder-box">
+                        <span>No Image</span>
+                    </div>
+                    {{ end }}
+                    <h3 class="artwork-title">{{ .Title | upper }}</h3>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
