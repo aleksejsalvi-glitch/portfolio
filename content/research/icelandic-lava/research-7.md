@@ -1,5 +1,5 @@
 ---
-title: "Icelandic Lava 7"
+title: "66% Black Lava + 33% Quartz"
 date: 2026-08-13
 image: "/images/icelandic-lava/7.jpg"
 weight: 70

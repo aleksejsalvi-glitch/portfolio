@@ -1,5 +1,5 @@
 ---
-title: "Icelandic Lava 10"
+title: "66% Yellow Rock + 33% Quartz"
 date: 2026-08-13
 image: "/images/icelandic-lava/10.jpg"
 weight: 100
