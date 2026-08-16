@@ -1,4 +1,4 @@
 ---
 title: "Wild Clay Glazes"
-weight: 70
+weight: 80
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Diopside Glazes"
-weight: 30
+weight: 40
 ---

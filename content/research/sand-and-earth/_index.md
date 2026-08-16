@@ -1,4 +1,4 @@
 ---
 title: "Sand & Earth Glazes"
-weight: 90
+weight: 100
 ---

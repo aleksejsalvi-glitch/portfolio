@@ -1,4 +1,4 @@
 ---
 title: "Mixed Minerals Glazes"
-weight: 60
+weight: 70
 ---

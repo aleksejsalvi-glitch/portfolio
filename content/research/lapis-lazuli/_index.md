@@ -1,4 +1,4 @@
 ---
 title: "Lapis Lazuli Glazes"
-weight: 50
+weight: 60
 ---

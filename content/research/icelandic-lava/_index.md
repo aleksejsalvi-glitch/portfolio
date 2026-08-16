@@ -1,4 +1,4 @@
 ---
 title: "Icelandic Lava Glazes"
-weight: 100
+weight: 10
 ---

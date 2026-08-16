@@ -1,4 +1,4 @@
 ---
 title: "Obsidian Glazes"
-weight: 40
+weight: 50
 ---
