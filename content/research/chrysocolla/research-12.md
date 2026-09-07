@@ -1,5 +1,5 @@
 ---
-title: "16% Chrysocolla + 4% Cobalt Oxide"
+title: "16% Chrysocolla + 4% Co₃O₄"
 date: 2024-02-26
 ratio: "4:5"
 weight: 120

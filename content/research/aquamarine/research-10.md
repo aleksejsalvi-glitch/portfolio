@@ -1,5 +1,5 @@
 ---
-title: "53% Aquamarine + 2% Cobalt Oxide"
+title: "53% Aquamarine + 2% Co₃O₄"
 date: 2024-02-26
 ratio: "4:5"
 weight: 100

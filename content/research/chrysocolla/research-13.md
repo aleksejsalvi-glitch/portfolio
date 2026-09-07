@@ -1,5 +1,5 @@
 ---
-title: "16% Chrysocolla + 4% Chromium Oxide"
+title: "16% Chrysocolla + 4% Cr₂O₃"
 date: 2024-02-26
 ratio: "4:5"
 weight: 130

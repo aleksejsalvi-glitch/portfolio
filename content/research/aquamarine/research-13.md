@@ -1,5 +1,5 @@
 ---
-title: "53% Aquamarine + 12% Iron Oxide"
+title: "53% Aquamarine + 12% Fe₂O₃"
 date: 2024-02-26
 ratio: "4:5"
 weight: 130
