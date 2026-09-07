@@ -28,7 +28,7 @@ title = 'ALEX SALVI'
   weight = 30
 
 [[menu.main]]
-  name = "RESEARCH"
+  name = "CERAMIC GLAZES RESEARCH"
   url = "/research/"
   weight = 40
 
