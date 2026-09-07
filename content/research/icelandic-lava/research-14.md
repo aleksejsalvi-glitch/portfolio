@@ -1,5 +1,5 @@
 ---
-title: "Black Lava + Rutile + Copper"
+title: "BLACK LAVA + RUTILE + CuO"
 date: 2026-08-13
 image: "/images/icelandic-lava/14.jpg"
 weight: 140

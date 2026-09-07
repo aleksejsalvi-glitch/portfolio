@@ -1,5 +1,5 @@
 ---
-title: "54% Chrysocolla"
+title: "54% CHRYSOCOLLA"
 date: 2024-02-26
 image: "/images/cri/bowls/c2.jpg"
 weight: 20

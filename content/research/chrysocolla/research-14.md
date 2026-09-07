@@ -1,5 +1,5 @@
 ---
-title: "16% Chrysocolla + 4% Fe₂O₃"
+title: "16% CHRYSOCOLLA + 4% Fe₂O₃"
 date: 2024-02-26
 ratio: "4:5"
 weight: 140

@@ -1,5 +1,5 @@
 ---
-title: "17% Chrysocolla + 4% Co₃O₄"
+title: "17% CHRYSOCOLLA + 4% Co₃O₄"
 date: 2024-02-26
 ratio: "4:5"
 weight: 90

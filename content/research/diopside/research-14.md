@@ -1,5 +1,5 @@
 ---
-title: "21% Diopside + 4% Fe₂O₃"
+title: "21% DIOPSIDE + 4% Fe₂O₃"
 date: 2024-02-26
 ratio: "4:5"
 weight: 140

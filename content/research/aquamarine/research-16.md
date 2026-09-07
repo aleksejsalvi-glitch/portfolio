@@ -1,5 +1,5 @@
 ---
-title: "29% Aquamarine + 4% Cr₂O₃"
+title: "29% AQUAMARINE + 4% Cr₂O₃"
 date: 2024-02-26
 ratio: "4:5"
 weight: 160

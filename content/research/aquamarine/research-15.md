@@ -1,5 +1,5 @@
 ---
-title: "29% Aquamarine + 4% Co₃O₄"
+title: "29% AQUAMARINE + 4% Co₃O₄"
 date: 2024-02-26
 ratio: "4:5"
 weight: 150

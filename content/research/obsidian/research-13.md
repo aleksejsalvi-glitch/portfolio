@@ -1,5 +1,5 @@
 ---
-title: "63% Obsidian + 4% Co₃O₄"
+title: "63% OBSIDIAN + 4% Co₃O₄"
 date: 2024-02-26
 ratio: "4:5"
 weight: 130

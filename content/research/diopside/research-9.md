@@ -1,5 +1,5 @@
 ---
-title: "23% Diopside + 4% Co₃O₄"
+title: "23% DIOPSIDE + 4% Co₃O₄"
 date: 2024-02-26
 ratio: "4:5"
 weight: 90

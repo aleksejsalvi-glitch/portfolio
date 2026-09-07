@@ -1,5 +1,5 @@
 ---
-title: "29% Aquamarine + 4% MnO₂"
+title: "29% AQUAMARINE + 4% MnO₂"
 date: 2024-02-26
 ratio: "4:5"
 weight: 180

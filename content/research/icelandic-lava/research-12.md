@@ -1,5 +1,5 @@
 ---
-title: "White Glaze + Black Seaweed"
+title: "WHITE GLAZE + BLACK SEAWEED"
 date: 2026-08-13
 image: "/images/icelandic-lava/12.jpg"
 weight: 120
