@@ -1,5 +1,5 @@
 ---
-title: "Project 4"
+title: "Control formula + Fe₂O₃ + MnO"
 date: 2026-01-01
 ratio: "4:5"
 image: "/images/new-section/4.jpg"

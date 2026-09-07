@@ -1,5 +1,5 @@
 ---
-title: "Project 5"
+title: "Control formula + Black lava"
 date: 2026-01-01
 ratio: "4:5"
 image: "/images/new-section/5.jpg"

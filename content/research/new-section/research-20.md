@@ -1,5 +1,5 @@
 ---
-title: "Project 20"
+title: "Raku bowl 3"
 date: 2026-01-01
 ratio: "1:1"
 image: "/images/new-section/20.jpeg"

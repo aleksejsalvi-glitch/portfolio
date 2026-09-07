@@ -1,5 +1,5 @@
 ---
-title: "Project 7"
+title: "Control formula + Black lava + Fe₂O₃ + MnO"
 date: 2026-01-01
 ratio: "4:5"
 image: "/images/new-section/7.jpg"
