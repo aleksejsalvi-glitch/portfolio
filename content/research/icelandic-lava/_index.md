@@ -1,4 +1,4 @@
 ---
-title: "Icelandic Lava Glazes 2026"
+title: "Icelandic Lava Glazes"
 weight: 10
 ---
