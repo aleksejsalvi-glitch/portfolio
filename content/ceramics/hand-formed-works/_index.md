@@ -1,4 +1,4 @@
 ---
-title: "Hand-formed/painted Works"
+title: "Hand-builded/Painted Works"
 weight: 40
 ---
