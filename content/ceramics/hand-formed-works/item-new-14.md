@@ -1,6 +1,6 @@
 ---
-title: "wood-fired sphere 2"
+title: "wood-fired teapot"
 date: 2026-09-13
-image: "/images/modeling/z10.jpg"
+image: "/images/modeling/z7.jpg"
 weight: 15
 ---
