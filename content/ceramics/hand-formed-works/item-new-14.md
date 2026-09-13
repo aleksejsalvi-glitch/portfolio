@@ -1,6 +1,6 @@
 ---
 title: "wood-fired teapot"
-date: 2024-02-26
-image: "/images/modeling/2d.jpg"
+date: 2026-09-13
+image: "/images/modeling/z10.jpg"
 weight: 15
 ---

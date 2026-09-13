@@ -1,6 +1,6 @@
 ---
 title: "wood-fired sphere 2"
-date: 2024-02-26
-image: "/images/modeling/2d.jpg"
+date: 2026-09-13
+image: "/images/modeling/z9.jpg"
 weight: 20
 ---
