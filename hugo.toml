@@ -41,3 +41,8 @@ title = 'ALEX SALVI'
   name = "ARTICLES AND NOTES"
   url = "/articles-and-notes/"
   weight = 60
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

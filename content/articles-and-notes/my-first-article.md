@@ -1,7 +1,9 @@
 ---
 title: "My First Article"
-date: 2024-03-01
+date: 2026-09-14
 weight: 10
+ratio: "4:5"
+image: "/images/articles/z2.jpg"  # Add the path to your cover image here!
 ---
 
 You can read my full article below or download it directly!
