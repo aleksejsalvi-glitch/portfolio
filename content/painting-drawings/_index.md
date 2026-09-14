@@ -1,4 +1,6 @@
 ---
 title: "Paintings & Drawings"
 ---
-These works approach drawing and painting as processes of study and reflection. Ranging from oil paintings to anatomical pencil drawings, they examine the body, form, and presence through both monochrome and color
+"My advice to young artists is to paint as much as possible, for as long as possible, and to never be afraid of painting poorly."
+<br><br>
+- CLAUDE MONET
