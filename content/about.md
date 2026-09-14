@@ -15,3 +15,5 @@ Alongside ceramic work, their practice extends to painting, calligraphy, and ins
 Salvi holds a BA in Sculpture from the Academy of Fine Arts in Florence and an MA in Visual Arts - Environmental Sculpture and Production Technologies from the Academy of FIne Arts of Urbino, graduating with highest honour. Their academic research has included studies on ultra-refractory ceramics for space applications and experimental investigations into the use of rocks and minerals in high-temperature glazes.
 
 Their work has been exhibited in Italy and includes sculptural pieces, installations, and research-driven ceramic projects.
+
+They are currently in Iceland, collaborating with various ceramicists, studying firing methods, and creating new glazes with local materials.
