@@ -11,7 +11,7 @@ title: "Articles and notes"
   <!-- Bottom: PDF Link -->
   <div>
     <h2 style="font-size: 1.25rem; margin-bottom: 0.5rem; letter-spacing: 0.05em; font-weight: normal;">Experimental Study on the Use of Rocks and Minerals in the Development of High-Temperature Ceramic Glazes</h2>
-    <a href="../pdfs/Salvi_C.Alex_ThesisSummaryArticle.pdf" target="_blank" style="font-size: 1rem; text-decoration: underline; color: inherit; opacity: 0.8;">
+    <a href="../images/PDF/Salvi_C.Alex_ThesisSummaryArticle.pdf" target="_blank" style="font-size: 1rem; text-decoration: underline; color: inherit; opacity: 0.8;">
       Read Article (PDF)
     </a>
   </div>
