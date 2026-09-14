@@ -36,3 +36,8 @@ title = 'ALEX SALVI'
   name = "PROJECTS"
   url = "/projects/"
   weight = 50
+
+[[menu.main]]
+  name = "ARTICLES AND NOTES"
+  url = "/articles-and-notes/"
+  weight = 60
