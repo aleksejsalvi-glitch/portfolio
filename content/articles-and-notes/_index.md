@@ -2,7 +2,7 @@
 title: "Articles and notes"
 ---
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 3rem; margin-bottom: 2rem; max-width: 400px;">
+<div style="display: flex; flex-direction: column; gap: 1.5rem; margin: 3rem auto 2rem; text-align: center; max-width: 400px;">
   <!-- Top: 4:5 Image -->
   <div>
     <img src="../images/articles/z1.jpg" alt="Article Cover" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; background: #f0f0f0;">
