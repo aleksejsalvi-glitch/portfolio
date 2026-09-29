@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="section-container">
+    <h1 style="margin-bottom: 2rem; font-size: 1.25rem; letter-spacing: 0.1em; font-weight: 400; text-align: center;">{{
+        .Title | upper }}
+    </h1>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4rem; margin: 3rem auto 2rem; max-width: 1000px; width: 100%;">
+        
+        <!-- Article 1 -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; text-align: center; width: 100%; max-width: 400px;">
+            <div>
+                <img src='{{ "images/articles/z1.jpg" | relURL }}' alt="Article Cover" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; background: #f0f0f0;">
+            </div>
+            <div>
+                <h2 style="font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: normal; text-transform: none;">Experimental Study on the Use of Rocks and Minerals in the Development of High-Temperature Ceramic Glazes</h2>
+                <a href='{{ "images/PDF/Salvi_C.Alex_ThesisSummaryArticle.pdf" | relURL }}' target="_blank" style="font-size: 0.8rem; text-decoration: underline; color: inherit; opacity: 0.7;">
+                    Read Article (PDF)
+                </a>
+            </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; text-align: center; width: 100%; max-width: 400px;">
+            <div>
+                <img src='{{ "images/articles/a1.jpg" | relURL }}' alt="Second Article Cover" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; background: #f0f0f0;">
+            </div>
+            <div>
+                <h2 style="font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: normal; text-transform: none;">Experiments in glaze development - notes</h2>
+                <a href='{{ "images/PDF/2.pdf" | relURL }}' target="_blank" style="font-size: 0.8rem; text-decoration: underline; color: inherit; opacity: 0.7;">
+                    Read Article (PDF)
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+{{ end }}
