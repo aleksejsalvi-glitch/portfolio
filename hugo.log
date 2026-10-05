@@ -1,0 +1,23 @@
+nohup: ignoring input
+Watching for changes in /home/alex/newsite/archetypes, /home/alex/newsite/assets/css, /home/alex/newsite/content/{articles-and-notes,calligraphy,ceramics,painting-drawings,projects,...}, /home/alex/newsite/data, /home/alex/newsite/i18n, /home/alex/newsite/layouts/{_default,about,articles-and-notes,calligraphy,ceramics,...}, /home/alex/newsite/static/images
+Watching for config changes in /home/alex/newsite/hugo.toml
+Start building sites … 
+hugo v0.155.0-74c0bbfc6abce6a4f568c2b8c593a7fca9710e3f+extended+withdeploy linux/amd64 BuildDate=2026-01-28T16:28:23Z VendorInfo=gohugoio
+
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │ 305 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 374 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Built in 197 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/portfolio/ (bind address 127.0.0.1) 
+Press Ctrl+C to stop

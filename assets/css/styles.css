@@ -149,6 +149,11 @@ main {
     gap: 1rem;
 }
 
+.row-5col {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 5rem;
+}
+
 .row-4col {
     grid-template-columns: repeat(4, 1fr);
 }
@@ -655,9 +660,14 @@ main {
         gap: 0.8rem;
     }
 
+    .row-5col,
     .row-4col,
     .row-3col {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .row-5col {
+        padding: 0 0.5rem;
     }
 
     .row-bio-layout {

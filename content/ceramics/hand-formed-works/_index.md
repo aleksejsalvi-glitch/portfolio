@@ -1,4 +1,4 @@
 ---
-title: "Hand-builded/Painted Works"
+title: "Studio Ceramics"
 weight: 40
 ---
