@@ -1,5 +1,5 @@
 ---
-title: "Sample 1"
+title: "SAMPLE 1"
 date: 2024-02-26
 image: "/images/wood-firing/A1.jpg"
 ratio: "4:5"
