@@ -1,4 +1,4 @@
 ---
-title: "Studio Ceramics"
+title: ""
 weight: 40
 ---
